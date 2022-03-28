@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "24661ba0-93aa-483b-b59c-a1aa75fa34fe",
+		"name": "Phone number validation API",
+		"description": "The application validates international phone numbers\n\nContact Support:\n Name: David Sitati\n Email: d.sitati@yahoo.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "v1/customers",
+			"item": [
+				{
+					"name": "getAllCustomers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/v1/customers",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"customers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/v1/customers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"customers"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"header\": {\n        \"requestRefId\": \"3e8645d9-ece7-449e-b219-11164c82c98a\",\n        \"responseCode\": 200,\n        \"responseMessage\": \"TRANSACTION SUCCESSFUL\",\n        \"timestamp\": \"2022-03-28T11:53:02.881Z\"\n    },\n    \"body\": {\n        \"content\": [\n            {\n                \"id\": 0,\n                \"name\": \"Walid Hammadi\",\n                \"phone\": \"(212) 6007989253\",\n                \"country\": \"Morocco\",\n                \"state\": \"not valid\",\n                \"countryCode\": \"(212)\"\n            },\n            {\n                \"id\": 1,\n                \"name\": \"Yosaf Karrouch\",\n                \"phone\": \"(212) 698054317\",\n                \"country\": \"Morocco\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(212)\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Younes Boutikyad\",\n                \"phone\": \"(212) 6546545369\",\n                \"country\": \"Morocco\",\n                \"state\": \"not valid\",\n                \"countryCode\": \"(212)\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Houda Houda\",\n                \"phone\": \"(212) 6617344445\",\n                \"country\": \"Morocco\",\n                \"state\": \"not valid\",\n                \"countryCode\": \"(212)\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Chouf Malo\",\n                \"phone\": \"(212) 691933626\",\n                \"country\": \"Morocco\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(212)\"\n            },\n            {\n                \"id\": 5,\n                \"name\": \"soufiane fritisse \",\n                \"phone\": \"(212) 633963130\",\n                \"country\": \"Morocco\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(212)\"\n            },\n            {\n                \"id\": 6,\n                \"name\": \"Nada Sofie\",\n                \"phone\": \"(212) 654642448\",\n                \"country\": \"Morocco\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(212)\"\n            },\n            {\n                \"id\": 7,\n                \"name\": \"Edunildo Gomes Alberto \",\n                \"phone\": \"(258) 847651504\",\n                \"country\": \"Mozambique\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(258)\"\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Walla's Singz Junior\",\n                \"phone\": \"(258) 846565883\",\n                \"country\": \"Mozambique\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(258)\"\n            },\n            {\n                \"id\": 9,\n                \"name\": \"sevilton sylvestre\",\n                \"phone\": \"(258) 849181828\",\n                \"country\": \"Mozambique\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(258)\"\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Tanvi Sachdeva\",\n                \"phone\": \"(258) 84330678235\",\n                \"country\": \"Mozambique\",\n                \"state\": \"not valid\",\n                \"countryCode\": \"(258)\"\n            },\n            {\n                \"id\": 11,\n                \"name\": \"Florencio Samuel\",\n                \"phone\": \"(258) 847602609\",\n                \"country\": \"Mozambique\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(258)\"\n            },\n            {\n                \"id\": 12,\n                \"name\": \"Solo Dolo\",\n                \"phone\": \"(258) 042423566\",\n                \"country\": \"Mozambique\",\n                \"state\": \"not valid\",\n                \"countryCode\": \"(258)\"\n            },\n            {\n                \"id\": 13,\n                \"name\": \"Pedro B 173\",\n                \"phone\": \"(258) 823747618\",\n                \"country\": \"Mozambique\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(258)\"\n            },\n            {\n                \"id\": 14,\n                \"name\": \"Ezequiel Fenias\",\n                \"phone\": \"(258) 848826725\",\n                \"country\": \"Mozambique\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(258)\"\n            },\n            {\n                \"id\": 15,\n                \"name\": \"JACKSON NELLY\",\n                \"phone\": \"(256) 775069443\",\n                \"country\": \"Uganda\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(256)\"\n            },\n            {\n                \"id\": 16,\n                \"name\": \"Kiwanuka Budallah\",\n                \"phone\": \"(256) 7503O6263\",\n                \"country\": \"Uganda\",\n                \"state\": \"not valid\",\n                \"countryCode\": \"(256)\"\n            },\n            {\n                \"id\": 17,\n                \"name\": \"VINEET SETH\",\n                \"phone\": \"(256) 704244430\",\n                \"country\": \"Uganda\",\n                \"state\": \"valid\",\n                \"countryCode\": \"(256)\"\n            },\n            {\n                \"id\": 18,\n                \"name\": \"Jokkene Richard\",\n                \"phone\": \"(256) 7734127498\",\n                \"country\": \"Uganda\",\n                \"state\": \"not valid\",\n                \"countryCode\": \"(256)\"\n            },\n            {\n                \"id\": 19,\n                \"name\": \"Ogwal David\",\n                \"phone\": \"(256) 7771031454\",\n                \"country\": \"Uganda\",\n                \"state\": \"not valid\",\n                \"countryCode\": \"(256)\"\n            }\n        ],\n        \"pageable\": {\n            \"sort\": {\n                \"empty\": true,\n                \"sorted\": false,\n                \"unsorted\": true\n            },\n            \"offset\": 0,\n            \"pageNumber\": 0,\n            \"pageSize\": 20,\n            \"paged\": true,\n            \"unpaged\": false\n        },\n        \"totalElements\": 41,\n        \"last\": false,\n        \"totalPages\": 3,\n        \"size\": 20,\n        \"number\": 0,\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"numberOfElements\": 20,\n        \"first\": true,\n        \"empty\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getCustomerById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/v1/customers/:customerId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"v1",
+								"customers",
+								":customerId"
+							],
+							"variable": [
+								{
+									"key": "customerId",
+									"value": "100",
+									"description": "(Required) customerId"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/v1/customers/:customerId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"customers",
+										":customerId"
+									],
+									"variable": [
+										{
+											"key": "customerId",
+											"value": "1",
+											"description": "(Required) customerId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"header\": {\n        \"requestRefId\": \"8c7a48c6-f6ae-42e5-81b6-d65546856ce1\",\n        \"responseCode\": 200,\n        \"responseMessage\": \"TRANSACTION SUCCESSFUL\",\n        \"timestamp\": \"2022-03-28T11:53:43.211Z\"\n    },\n    \"body\": {\n        \"id\": 1,\n        \"name\": \"Yosaf Karrouch\",\n        \"phone\": \"(212) 698054317\",\n        \"country\": \"Morocco\",\n        \"state\": \"valid\",\n        \"countryCode\": \"(212)\"\n    }\n}"
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/v1/customers/:customerId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v1",
+										"customers",
+										":customerId"
+									],
+									"variable": [
+										{
+											"key": "customerId",
+											"value": "-69914186",
+											"description": "(Required) customerId"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"header\": {\r\n        \"requestRefId\": \"bf0bc6f6-b090-41e9-9cce-008e3905a52f\",\r\n        \"responseCode\": 404,\r\n        \"responseMessage\": \"TRANSACTION FAILED\",\r\n        \"timestamp\": \"2022-03-28T11:54:10.625Z\"\r\n    },\r\n    \"body\": {\r\n        \"status\": \"NOT_FOUND\",\r\n        \"timestamp\": \"28-03-2022 02:54:10\",\r\n        \"message\": \"Customer not found for ID: 100\",\r\n        \"debugMessage\": \"Invalid ID\",\r\n        \"subErrors\": []\r\n    }\r\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "localhost:8081",
+			"type": "string"
+		}
+	]
+}
