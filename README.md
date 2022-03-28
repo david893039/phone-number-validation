@@ -9,7 +9,7 @@ code and number
 ## Running Steps:
  1. Clone the repo in any directory
  2. cd into **phone-number-validation**
- 3. Run **"docker-compose up --build"**. This may take some time.
+ 3. Run **"docker compose -f docker-compose.yml up"**. This may take some time.
  4. Open **localhost:8082** in your browser to access the front end
 
 ## Postman collection:
