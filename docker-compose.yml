@@ -1,0 +1,22 @@
+version: '3'
+services:
+  springboot-app:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: backend
+    container_name: backend-service
+    ports:
+      - "8081:8081"
+    restart: always
+  vue-app:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: frontend
+    container_name: frontend-service
+    ports:
+      - "8082:8080"
+    restart: always
+    depends_on:
+      - springboot-app
