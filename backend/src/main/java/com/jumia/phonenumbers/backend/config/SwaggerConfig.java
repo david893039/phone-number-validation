@@ -27,7 +27,7 @@ public class SwaggerConfig {
 
     private ApiInfo metadata() {
         return new ApiInfoBuilder()
-                .title("Phone number validation API")
+                .title("Phone Number Validation API")
                 .description("The application validates international phone numbers")
                 .contact(new Contact("David Sitati", "", "d.sitati@yahoo.com"))
                 .version("1.0")

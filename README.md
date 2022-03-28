@@ -8,12 +8,12 @@ code and number.
 
 ## Running Steps:
  1. Clone the repo in any directory
- 2. cd into **phone-number-validation**
+ 2. cd **phone-number-validation**
  3. Run **"docker-compose up --build"**
  4. Open **localhost:8082** in your browser to access the front end
 
 ## Postman collection:
- - Open Postman and press import then select **"Phone number validation API.postman_collection.json"** file.
+ - Open Postman, click Import then select **"phone_number_validation_API.postman_collection.json"** file.
       
 ## Used Technologies: 
  - Backend: **Spring-Boot**
